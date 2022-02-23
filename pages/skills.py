@@ -4,7 +4,7 @@ from streamlit_lottie import st_lottie
 import requests
 
 def write():
-    st.title("Skills :hammer_and_wrench:")
+    st.title("Skills")
     col1, col2, col3 = st.columns(3)
     with col1:
         st.subheader("IT skills")

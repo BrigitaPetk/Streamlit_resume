@@ -6,6 +6,11 @@ import pages.experience
 import pages.edu
 
 
+# Page title:
+st.set_page_config(page_title="My Resume",
+                   page_icon=":raising_hand:",  #icon: https://www.webfx.com/tools/emoji-cheat-sheet/
+                   layout="wide")
+
 def write_page(page):  
     page.write()
 
@@ -27,6 +32,15 @@ def main():
     with st.spinner(f"Loading {selection} ..."):
         write_page(page)
 
+
+
+#hidde_objekcts = """
+ #                   <style>
+                    #MainMenu {visibility: hidden;}
+  #                  footer {visibility: hidden;}
+   #                 header {visibility: hidden;}
+    #                </style>                   
+     #               """
 
 
 if __name__ == "__main__":
