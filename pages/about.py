@@ -14,7 +14,8 @@ def write():
             return r.json()
 
         hello = load_lottieurl('https://assets10.lottiefiles.com/packages/lf20_zkbsde97.json')
-        st_lottie(hello,  speed=1, reverse=False, loop=True, quality="low", height=300, width=300, key='hello')
+        # hello = load_lottieurl('https://assets7.lottiefiles.com/packages/lf20_emy3lanj.json')
+        st_lottie(hello,  speed=1, reverse=False, loop=True, quality="low", height=350, width=300, key='hello')
 
     with kaire:
             """Used to write the about page in the app.py file"""

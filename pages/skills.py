@@ -32,7 +32,7 @@ def write():
             return r.json()
 
         hello = load_lottieurl('https://assets8.lottiefiles.com/packages/lf20_z5loe4p9.json')
-        st_lottie(hello,  speed=1, reverse=False, loop=True, quality="low", height=230, width=230, key='hello')
+        st_lottie(hello,  speed=1, reverse=False, loop=True, quality="low", height=300, width=300, key='hello')
 
 
 

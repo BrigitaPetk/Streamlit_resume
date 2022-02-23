@@ -18,8 +18,9 @@ def write_page(page):
 PAGES = {
     "About": pages.about,
     "Education" : pages.edu,
+    "Experience": pages.experience,  
     "Skills": pages.skills,
-    "Experience": pages.experience,
+
 }
 
 def main():
