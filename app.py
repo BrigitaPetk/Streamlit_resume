@@ -4,7 +4,7 @@ import pages.about
 import pages.skills
 import pages.experience
 import pages.edu
-
+import pages.contacts
 
 # Page title:
 st.set_page_config(page_title="My Resume",
@@ -20,6 +20,7 @@ PAGES = {
     "Education" : pages.edu,
     "Experience": pages.experience,  
     "Skills": pages.skills,
+    "Contact me": pages.contacts,
 
 }
 
