@@ -7,7 +7,8 @@ from streamlit_lottie import st_lottie
 def write():
 
     st.title("Education")
-    col1, col2, col3 = st.columns([5,15, 10])
+    
+    col1, col2, col3 = st.columns([5,15, 12])
     with col1:
         st.write("2021-10 – 2021-12")
         st.write("2018 – 2020  \n ## ")
@@ -25,8 +26,5 @@ def write():
             return r.json()
 
         hello = load_lottieurl('https://assets1.lottiefiles.com/packages/lf20_1uetnpo3.json')
-        st_lottie(hello,  speed=1, reverse=False, loop=True, quality="low", height=300, width=300, key='hello')
+        st_lottie(hello,  speed=1, reverse=False, loop=True, quality="low", height=350, width=350, key='hello')
 
-
-if __name__ == "__main__":
-    main()

@@ -34,9 +34,6 @@ def write():
             return r.json()
 
         contact = load_lottieurl('https://assets6.lottiefiles.com/packages/lf20_6owo8hwo.json')
-        st_lottie(contact,  speed=1, reverse=False, loop=True, quality="low", height=300, width=300, key='contact')
+        st_lottie(contact,  speed=1, reverse=False, loop=True, quality="low", height=350, width=350, key='contact')
 
 
-
-if __name__ == "__main__":
-    main()

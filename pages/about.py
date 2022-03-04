@@ -4,22 +4,10 @@ import json
 from streamlit_lottie import st_lottie
 
 def write():
-    col1, col2 = st.columns([30,12])
-
-    with col2:
-        def load_lottieurl(url: str):
-            r = requests.get(url)
-            if r.status_code != 200:
-                return None
-            return r.json()
-
-        hello = load_lottieurl('https://assets10.lottiefiles.com/packages/lf20_zkbsde97.json')
-        # hello = load_lottieurl('https://assets7.lottiefiles.com/packages/lf20_emy3lanj.json')
-        st_lottie(hello,  speed=1, reverse=False, loop=True, quality="low", height=350, width=300, key='hello')
-
+    st.title("Hello, my name is Brigita!")
+    col1, col2, col3 = st.columns([10,1,5])
+    
     with col1:
-            """Used to write the about page in the app.py file"""
-            st.title("Hello, my name is Brigita!")
             st.subheader( "About my journey:")
             st.write(""" After gaining extensive experience in the field of textiles, I turned the sail to the IT side.
             I learned **python** basics at Code Academy and now I'm continuing self-learning and practice my knowledge at Festo.
@@ -35,8 +23,15 @@ def write():
     <a href="https://github.com/BrigitaPetk">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" alt="alt" style="width:32px;height:32px;">
     </a>''', unsafe_allow_html=True)
+    with col2:
+        st.write("")
+    with col3:
+            def load_lottieurl(url: str):
+                r = requests.get(url)
+                if r.status_code != 200:
+                    return None
+                return r.json()
 
-
+            hello = load_lottieurl('https://assets10.lottiefiles.com/packages/lf20_zkbsde97.json')
+            st_lottie(hello,  speed=1, reverse=False, loop=True, quality="low", height=300, width=300, key='hello')
         
-if __name__ == "__main__":
-    main()

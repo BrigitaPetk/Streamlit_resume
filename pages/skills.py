@@ -5,7 +5,7 @@ import requests
 
 def write():
     st.title("Skills")
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3 = st.columns([10,10, 15])
     with col1:
         st.subheader("IT skills")
         st.write(""" 
@@ -32,10 +32,5 @@ def write():
             return r.json()
 
         hello = load_lottieurl('https://assets8.lottiefiles.com/packages/lf20_z5loe4p9.json')
-        st_lottie(hello,  speed=1, reverse=False, loop=True, quality="low", height=300, width=300, key='hello')
+        st_lottie(hello,  speed=1, reverse=False, loop=True, quality="low", height=350, width=350, key='hello')
 
-
-
-
-if __name__ == "__main__":
-    main()
