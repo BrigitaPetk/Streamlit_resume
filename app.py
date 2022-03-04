@@ -35,14 +35,14 @@ def main():
         write_page(page)
 
 
-
-#hidde_objekcts = """
- #                   <style>
-                    #MainMenu {visibility: hidden;}
-  #                  footer {visibility: hidden;}
-   #                 header {visibility: hidden;}
-    #                </style>                   
-     #               """
+hidden_objects = """
+                   <style>
+                    MainMenu {visibility: hidden;}
+                   footer {visibility: hidden;}
+                   header {visibility: hidden;}
+                   </style>                   
+                   """
+st.markdown(hidden_objects,unsafe_allow_html=True)
 
 
 if __name__ == "__main__":
