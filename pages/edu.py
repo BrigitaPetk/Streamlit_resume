@@ -14,9 +14,9 @@ def write():
         st.write(" 2014 – 2018")
 
     with col2:
-        st.write("** Code Academy **")
-        st.write("** Kaunas university of technology **  \n  Master's degree, Textile sciences an engineering ")
-        st.write("** Kaunas university of technology **  \n Bachelor's degree, Textile sciences an engineering")
+        st.write("**Code Academy**")
+        st.write("**Kaunas university of technology**  \n  Master's degree, Textile sciences an engineering ")
+        st.write("**Kaunas university of technology**  \n Bachelor's degree, Textile sciences an engineering")
     with col3:
         def load_lottieurl(url: str):
             r = requests.get(url)

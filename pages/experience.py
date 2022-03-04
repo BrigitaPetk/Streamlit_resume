@@ -12,9 +12,9 @@ def write():
         st.write(" 2017-03 – 2020-08")
 
     with col2:
-        st.write("** Junio data visualization specialist **  \n  UAB  'Festo', Internship")
-        st.write("** Designer-technologist **  \n  UAB  'Barker Textiles' ")
-        st.write("** Graphic designer **  \n UAB  'Textilis'")
+        st.write("**Junio data visualization specialist**  \n  UAB  'Festo', Internship")
+        st.write("**Designer-technologist**  \n  UAB  'Barker Textiles' ")
+        st.write("**Graphic designer**  \n UAB  'Textilis'")
     with col3:
         def load_lottieurl(url: str):
             r = requests.get(url)
