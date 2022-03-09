@@ -9,7 +9,6 @@ https://share.streamlit.io/brigitapetk/streamlit_resume/main/app.py
 ```sh
 pip install streamlit
 pip install streamlit_lottie
-pip install request
 ```
 2. To run locally: 
 ```sh
