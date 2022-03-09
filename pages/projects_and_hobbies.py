@@ -1,30 +1,31 @@
-import requests
 import streamlit as st
-import json
-from streamlit_lottie import st_lottie
 
 def write():
-    col1, col2, col3 = st.columns([8,7,8])
+    st.title("Projects")
+    col1, col2, col3 = st.columns([5,5,5])
     with col1:
+        st.markdown(''' 
+    <a href="https://github.com/BrigitaPetk/ESP32_color_control">
+    <img src="https://github.com/BrigitaPetk/Streamlit_resume/blob/main/pages/projects_images/ESP32_project.png?raw=true" alt="alt" style="width:300px;height:300px;">
+    </a>
+    ''', unsafe_allow_html=True)
+        st.subheader("ESP32 Project")
         st.write("")
     with col2:
-        st.title("In proccess...")
-    with col3:
+        st.markdown(''' 
+    <a href="https://github.com/BrigitaPetk/Streamlit_resume">
+    <img src="https://github.com/BrigitaPetk/Streamlit_resume/blob/main/pages/projects_images/Resume_project.png?raw=tru" alt="alt" style="width:300px;height:300px;">
+    </a>
+    ''', unsafe_allow_html=True)
+        st.subheader("Resume Project")
         st.write("")
-        
-    col1, col2, col3 = st.columns([2,6,2])
-    with col1:
-        st.write("")
-    with col2:
-        def load_lottieurl(url: str):
-            r = requests.get(url)
-            if r.status_code != 200:
-                return None
-            return r.json()
-
-        spin = load_lottieurl('https://assets4.lottiefiles.com/packages/lf20_omullrhw.json')
-        st_lottie(spin,  speed=1, reverse=False, loop=True, quality="low", height=500, width=500, key='hello')
     with col3:
+        st.markdown(''' 
+    <a href="https://github.com/BrigitaPetk/support_department_dashboard">
+    <img src="https://github.com/BrigitaPetk/Streamlit_resume/blob/main/pages/projects_images/Dashboard_project.png?raw=true" alt="alt" style="width:300px;height:300px;">
+    </a>
+    ''', unsafe_allow_html=True)
+        st.subheader("Support Department Dashboard Project")
         st.write("")
 
 
